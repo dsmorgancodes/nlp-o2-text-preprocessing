@@ -118,11 +118,11 @@ uvx pre-commit run --all-files
 
 # First, run the module
 # IMPORTANT: Close each figure after viewing so execution continues
-uv run python -m nlp.text_preprocessing_case
+uv run python -m nlp.text_preprocessing_dsmorgan
 
 # Then, open the notebook.
 # IMPORTANT: Select the kernel and Run All:
-# notebooks/text_preprocessing_case.ipynb
+# notebooks/text_preprocessing_dsmorgan.ipynb
 
 uv run ruff format .
 uv run ruff check . --fix
