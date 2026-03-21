@@ -1,0 +1,34 @@
+2026-03-20 20:40:57 | INFO | CI | === RUN START ===
+2026-03-20 20:40:57 | INFO | CI | project=NLP
+2026-03-20 20:40:57 | INFO | CI | repo_dir=nlp-o2-text-preprocessing
+2026-03-20 20:40:57 | INFO | CI | python=3.14.3
+2026-03-20 20:40:57 | INFO | CI | os=Darwin 25.3.0
+2026-03-20 20:40:57 | INFO | CI | shell=zsh
+2026-03-20 20:40:57 | INFO | CI | cwd=.
+2026-03-20 20:40:57 | INFO | CI | github_actions=False
+2026-03-20 20:40:57 | INFO | CI | START script.....
+2026-03-20 20:40:57 | INFO | CI | ROOT_PATH = .
+2026-03-20 20:40:57 | INFO | CI | DATA_PATH = data
+2026-03-20 20:40:57 | INFO | CI | NOTEBOOKS_PATH = notebooks
+2026-03-20 20:40:57 | INFO | CI | SCRIPTS_PATH = scripts
+2026-03-20 20:41:09 | INFO | CI | ========================
+2026-03-20 20:41:09 | INFO | CI | Pipeline executed successfully!
+2026-03-20 20:41:09 | INFO | CI | ========================
+2026-03-20 20:41:09 | INFO | CI | END main()
+2026-03-20 20:45:04 | INFO | CI | === RUN START ===
+2026-03-20 20:45:04 | INFO | CI | project=NLP
+2026-03-20 20:45:04 | INFO | CI | repo_dir=nlp-o2-text-preprocessing
+2026-03-20 20:45:04 | INFO | CI | python=3.14.3
+2026-03-20 20:45:04 | INFO | CI | os=Darwin 25.3.0
+2026-03-20 20:45:04 | INFO | CI | shell=zsh
+2026-03-20 20:45:04 | INFO | CI | cwd=.
+2026-03-20 20:45:04 | INFO | CI | github_actions=False
+2026-03-20 20:45:04 | INFO | CI | START script.....
+2026-03-20 20:45:04 | INFO | CI | ROOT_PATH = .
+2026-03-20 20:45:04 | INFO | CI | DATA_PATH = data
+2026-03-20 20:45:04 | INFO | CI | NOTEBOOKS_PATH = notebooks
+2026-03-20 20:45:04 | INFO | CI | SCRIPTS_PATH = scripts
+2026-03-20 20:45:08 | INFO | CI | ========================
+2026-03-20 20:45:08 | INFO | CI | Pipeline executed successfully!
+2026-03-20 20:45:08 | INFO | CI | ========================
+2026-03-20 20:45:08 | INFO | CI | END main()
