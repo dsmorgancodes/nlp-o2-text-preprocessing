@@ -182,6 +182,12 @@ clean_tokens: list[str] = [
 
 count_of_clean_tokens: int = len(clean_tokens)
 
+vocab_reduction_pct: float = (
+    (count_of_raw_tokens - count_of_clean_tokens) / count_of_raw_tokens * 100
+    if count_of_raw_tokens > 0
+    else 0.0
+)
+
 print("First 20 cleaned tokens:")
 print(clean_tokens[:20])
 print(f"Total cleaned tokens: {count_of_clean_tokens:,}")
@@ -202,11 +208,17 @@ summary_df: pl.DataFrame = pl.DataFrame(
             count_of_tokens_no_punct,
             count_of_clean_tokens,
         ],
+        "metric": [
+            "",
+            "",
+            f"{vocab_reduction_pct:.1f}% reduction from raw",
+        ],
     }
 )
 
 print("Preprocessing summary:")
 print(summary_df)
+print(f"Vocabulary reduction: {vocab_reduction_pct:.1f}%")
 
 # ============================================================
 # Section 9. Build a Frequency Table with Polars
@@ -249,7 +261,9 @@ plt.bar(summary_df["stage"], summary_df["count"])
 ax = plt.gca()
 ax.tick_params(axis="x", labelrotation=20)
 
-plt.title("Token Counts Across Preprocessing Stages")
+plt.title(
+    f"Token Counts Across Preprocessing Stages ({vocab_reduction_pct:.1f}% reduction)"
+)
 plt.xlabel("Stage")
 plt.ylabel("Count")
 plt.tight_layout()
